@@ -1,7 +1,11 @@
+git clone <url>
 
+git checkout -b <nameBranch>
 
 git add . 
 
-git commit -m "sometext"
+git commit -m 'nameCommit'
 
 git push 
+
+git push --set-upstream origin darynatkm
