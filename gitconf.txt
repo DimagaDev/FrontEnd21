@@ -1,0 +1,11 @@
+git clone <url>
+
+git checkout <nameBranch>
+
+git add .
+
+git commit -m 'nameCommit'
+
+git push
+
+
