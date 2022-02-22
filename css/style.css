@@ -1,3 +1,8 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 h2 {
 	color: rgba(255, 40, 40, 0.794);
 	font-size: 50px;
@@ -6,4 +11,30 @@ h2 {
 .someStyle {
 	color: rgba(255, 40, 40, 0.794);
 	font-size: 25px;
+}
+
+.header {
+	background-color: chartreuse;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+
+.footer {
+	background-color: cornflowerblue;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+.footer p {
+	padding-top: 10px;
+}
+
+.styleul {
+	list-style-image: url('../img/favicon.png');
+}
+
+img {
+	width: 50%;
+	height: auto;
 }
