@@ -1,0 +1,19 @@
+body
+{
+    font-size: 18px;
+}
+
+h1
+ {
+    color:rgb(46, 35, 126);
+    font-size: 25px;
+}
+h2
+{
+    font-size: 30px; 
+    color: rgb(76, 76, 211); 
+}
+.Style {
+    color: blueviolet;
+    font-size: 25px;
+}
