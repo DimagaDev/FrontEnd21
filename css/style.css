@@ -4,18 +4,18 @@ q {
 }
 
 h1{
-        font-size: 50 px;
-    font-family: Arial ;
+
+    font-family: Arial, serif;
     line-height: 80px;
     text-align:-moz-left;
 }
 ul {
-    font-family: Candara;
+    font-family: Candara, serif;
     font-weight: bold;
 }
     #myInform{
         color: purple;
-        font-family: Candara;
+        font-family: Candara, serif;
         text-align: right
     }
 
@@ -38,7 +38,7 @@ p{
 }
 h2{
     text-decoration: underline;
-    font-family: Candara;
+    font-family: Candara, serif;
     line-height: 30px;
     color: indianred;
 
@@ -52,11 +52,21 @@ div{
     float: right;
     padding-right: 150px
 }
-footer{
-    background-color: burlywood;
-    display: inline-block;
-    height:40px;
-    float: right;
+.footer{
+       background-color: burlywood;
+   height: 40px;
+    padding-top: 5px;
+    padding-left:20px;
 
+}
+.footer p{
+    padding-left:20px;
+    font-family: Arial, serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: lighter;
+}
+.footer p span {
+    float: right;
 
 }
