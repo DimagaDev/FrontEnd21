@@ -2,9 +2,7 @@ q {
     text-align: center;
     color: lightcoral;
 }
-
-h1{
-
+h1 {
     font-family: Arial, serif;
     line-height: 80px;
     text-align:-moz-left;
@@ -13,38 +11,31 @@ ul {
     font-family: Candara, serif;
     font-weight: bold;
 }
-    #myInform{
-        color: purple;
-        font-family: Candara, serif;
-        text-align: right
-    }
-
-
-img{
+#myInform {
+    color: purple;
+    font-family: Candara, serif;
+    text-align: right
+}
+img {
     width: 14%;
     float: right;
     padding-right: 3px;
-
 }
-hr{
+hr {
     background-color: darkmagenta;
     height: 2px;
 }
-
-
-p{
+p {
     font-style: italic;
     font-weight: bold;
 }
-h2{
+h2 {
     text-decoration: underline;
     font-family: Candara, serif;
     line-height: 30px;
     color: indianred;
-
-
 }
-div{
+div {
     display: inline-block;
     width:170px;
     height: 1000px;
@@ -52,9 +43,9 @@ div{
     float: right;
     padding-right: 150px
 }
-.footer{
-       background-color: burlywood;
-   height: 40px;
+.footer {
+    background-color: burlywood;
+    height: 40px;
     padding-top: 5px;
     padding-left:20px;
 
