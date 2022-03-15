@@ -7,3 +7,96 @@ h2 {
 	color: rgba(255, 40, 40, 0.794);
 	font-size: 25px;
 }
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #d4d4d4;
+}
+article {
+	width: 1000px;
+	margin: 40px auto;
+	padding: 20px 150px 60px;
+	background-color: #f0f0f0;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
+}
+
+#main {
+	border: 2px solid #ddd;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Century Gothic', monospace;
+}
+
+#logo {
+	float: left;
+}
+#slogan {
+	float: right;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 0.7rem;
+	text-align: right;
+	color: #909090;
+	width: 30%;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: '';
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+.block {
+	padding: 30px;
+}
+
+.block:nth-child(odd) {
+	background-color: #f8f8f8;
+	border-bottom: 2px solid #ddd;
+	border-top: 2px solid #ddd;
+}
+
+.clearfix::before,
+.clearfix::after,
+.block::before,
+.block::after {
+	content: '';
+	display: table;
+}
+.clearfix::after,
+.block:after {
+	clear: both;
+}
+
+#main {
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+}
+
+.block img {
+	border: 2px solid #ddd;
+	border-radius: 50%;
+}
+.block:first-child,
+.block:last-child {
+	text-align: center;
+}
+header {
+	padding: 30px 15px;
+}

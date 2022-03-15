@@ -1,0 +1,12 @@
+.mainImg {
+	width: 300px;
+	box-shadow: -6px -6px 6px #a7a7a7;
+}
+
+.mainImg:hover {
+	opacity: 0.7;
+	cursor: pointer;
+	box-shadow: 11px 9px 6px #a7a7a7;
+	/* transform: scale(1.1); */
+	/* transform: rotate(180deg); */
+}
