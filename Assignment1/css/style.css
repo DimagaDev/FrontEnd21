@@ -15,5 +15,15 @@ div{
     margin-right: 10px;
     margin-left: 10px;
 }
+.profile {
+    display: flex;
+    flex-grow: 4;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#desc{
+    margin-left: 20px;  
+}
 
 
