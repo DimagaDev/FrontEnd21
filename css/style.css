@@ -1,89 +1,126 @@
-* {
-    margin: 0px;
-    padding: 0px;
+html {
+    font-family: 'League Gothic', sans-serif;
 }
 
 body {
-    font-family: 'Exo 2', sans-serif;
-    text-align: left;
+    margin: 0;
+    padding: 0;
+    max-width: 1366px;
 }
-
-.header {
-    width: 100%;
-    height: 35px;
-    text-align: center;
-    background-color: rgba(238, 209, 209, 0.555);
-}
-
-.header a {
+a {
     outline: none;
     text-decoration: none;
-    padding: 10px 5px 0;
-    font-size: 20px;
-}
-   
-a:link {
-    color: #141413;
-}
-   
-a:visited {
-    color: #121311;
-}
-   
-a:focus {
-    border-bottom: 1px solid;
-    background: #0d0d0e;
-}
-   
-a:hover {
-    border-bottom: 1px solid;
-    background: #ecf3e7;
-}
-   
-a:active {
-    background: #f1f1f0;
-    color: #CDFEAA;
+    color: black;
+    font-weight: bold
 }
 
-.image-prof {
+
+a:active {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: gray;
+}
+
+.header-top {
+    background-image: url('../img/bg.png');
+    padding-bottom: 15px;
+}
+
+.photo-header img {
+    width: 500px;
+    height: 100%;
+    position:relative;
+    left:550px;
+}
+
+.main-nav ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 130px;
+    list-style: none;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 1em;
+    padding-top: 25px;
+}
+
+.header-text {
+    padding: 15px;
+    text-align-last: left;
+    width: 50%;
+}
+
+.logo-header {
+    width: 100%;
+}
+
+.photo-header img {
+    width: 300px;
+}
+
+.header-main {
+    display: grid;
+    grid-template-columns: 300px 300px;
     padding: 15px;
 }
 
 .about-me {
-    padding-left: 15px;
-    padding-bottom: 5px;
-}
-
-h1 {
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-h2 {
     padding: 15px;
+    background-image: url('../img/bg.png');
     text-align: center;
 }
 
-h3 {
+.skills h2, p {
+    text-align: center;
+}
+
+.skills-main {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     padding: 10px;
 }
 
-img {
-    height: 300px;
-    width: 300px;
-    display: block;
-    margin: 0 auto;
+.footer-page {
+    background-image: url('../img/bg.png');
 }
 
-.mem {
-    width: 450px;
-    height: auto;
-}
-
-.footer p {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.footer-page h2, p {
     text-align: center;
-    background-color: rgba(238, 209, 209, 0.555);
+}
+.footer-page h2 {
+    padding-top: 35px;
+}
+
+.sand-me {
+    text-align: center;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.rating-result {
+	width: 265px;
+	margin: 0 auto;
+}
+.rating-result span {
+	padding: 0;
+	font-size: 32px;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+	content: '★';
+}
+.rating-result > span.active {
+	color: black;
+	text-shadow: 1px 1px #c60;
 }

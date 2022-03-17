@@ -1,37 +1,101 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8" />
-		<title>Портфолио</title>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
-		<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header class="header">
-			<a href="pages/about.html"><b>About</b></a>
-			<a href="pages/memes.html"><b>Memes</b></a>
-		</header>
-		<h1>Клименко Виталий</h1>
-		<hr>
-			<div class="image-p">
-			<p class="image-prof"><a title="Нажми на меня" target="_blank" href="https://www.meme-arsenal.com/memes/821b5ccd1aac6b73a4d87c13414f60db.jpg">
-			<img src="img/123.png" alt="#"></a></p>
-		</div>
-		<hr>
-					<div class="about-me">
-						<h2>Привет, меня зовут Виталий и мне 22 года. Я как бы начинающий front end разработчик.</h2>
-						<h3>Очень любопытный и веселый парень, который не против научиться и услышать что-то новое для себя от других таких же интересных людей)
-						<p>Когда-то в возрасте 3 лет я уже мог писать код и взламывать сети "NASA" и Пентагона, но это не точно. Жизнь довела меня до выбора профессии юриста и работы в суде, но после общения с женщинами приклонного возраста и "очень" интересной работы я все же решил вернуться в свою стихию.</p>
-						<p>Есть минимальное понятие HTML & CSS, что упрощает мне жизнь в школе "Шаг"</p>
-						<p>Хард и софт скиллы на высшем уровне, поэтому не думаю, что будут трудности с изучением JS.</p>
-						</h3>
-					</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="header-page">
+            <div class="header-top">
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/about.html">About me</a></li><!--другая страница-->
+                        <li><a href="#skills">Skills</a></li>       <!--ссылки  якоря-->
+                        <li><a href="#Contacts">Contacts</a></li>
+                    </ul>
+                </div>
+                    <!--<div class="logo-header">
+                    <img src="img/Vector.png" alt="Vector">
+                    </div>-->
+                </div>
+                <div class="header-main">
+                    <div class="header-text">
+                    <h1>KLIMENKO<br>VITALIY</h1>
+                    <p class="about-me-header">Front-end developer<br>23 years, Ukraine</p>
+                    </div>
+                    <div class="photo-header">
+                        <img src="img/123.png" alt="baner">
+                    </div>
+                </div>
+    </div>
 
-		<footer class="footer">
-			<p><b>&copy;Сделано при поддержке меня и моего учителя</b></p>
-		</footer>
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>Hi, I'm Vitaliy – Front-end developer from Vinnitsa. I'm interested in design and everything connected with it.</p>
+        <p>I'm studying at courses "Front-end" in IT-Academy.</p>
+        <p>Ready to implement excellent projects with wonderful people.</p>
+    </div>
 
-	</body>
+    <div class="skills">
+        <h2 >Skills</h2>
+        <p>I work in such programs as:</p>
+        <div class="skills-main">
+            <div class="skills-item">
+                <p><a name="skills"></a></p>
+                <img src="img/PS.png" alt="ps">
+                <p>Abobe Photoshop</p>
+                <div class="rating-result">
+                    <span class="active"></span>	
+                    <span class="active"></span>    
+                    <span class="active"></span>  
+                    <span class="active"></span>    
+                    <span></span>
+                </div>
+            </div>
+            <div class="skills-item">
+                <img src="img/AI.png" alt="ai">
+                <p>Adobe Illustrator</p>
+                <div class="rating-result">
+                    <span class="active"></span>	
+                    <span class="active"></span>    
+                    <span class="active"></span>  
+                    <span></span>    
+                    <span></span>
+                </div>
+            </div>
+            <div class="skills-item">
+                <img src="img/AE.png" alt="ae">
+                <p>Adobe After Effects</p>
+                <div class="rating-result">
+                    <span class="active"></span>	
+                    <span class="active"></span>    
+                    <span class="active"></span>  
+                    <span></span>    
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-page">
+        <div class="footer-top">
+            <h2>Contacts</h2>
+            <p>Want to know more or just chat? You are welcome!</p>
+        </div>
+        <p><a name="Contacts"></a></p>
+        <div class="sand-me">
+            <a href="mailto:v.klimenko2014@gmail.com"><img src="img/btnsand.png" alt="btnsand"></a>
+        </div>
+        <div class="footer-links"> <!--нужно доделать
+            <a href="https://www.instagram.com/"><img src="img/instlogo.png" alt=""></a>
+            <a href="#"><img src="img/linidlogo.png" alt=""></a>-->
+            <p>&copy; Made with the support of me and my teacher</p>
+        </div>
+    </div>
+    
+</body>
 </html>
