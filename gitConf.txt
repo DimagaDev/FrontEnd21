@@ -1,5 +1,7 @@
 git clone <url>
 
+git status
+
 git checkout -b <nameBranch>
 
 git add . 
