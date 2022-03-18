@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #A3CFD8;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 25px 10px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    padding: 15px;
+}
