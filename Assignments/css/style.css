@@ -1,0 +1,103 @@
+*{
+    font-family: Avenir, sans-serif;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+h3, h4 {
+    color: darkblue;
+    display: inline-block;
+    font: Georgia;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    font-family:  Georgia;
+    text-align: center;
+    font-size: -webkit-xxx-large;
+    width: -webkit-fill-available;
+    color: rgb(239, 255, 255);
+    font-size: 20px;
+}
+
+
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background: rgb(10, 121, 136);
+    box-shadow: 0px 0px 15px #333;
+    display: flex; 
+    
+}
+
+
+header{
+    border-bottom: 2px solid rgba(124, 100, 100, 0.164);
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin: 20px auto;
+
+
+}
+.profile-photo{
+    width: 150px;
+    height: fit-content;
+    border: 2px solid rgb(164, 241, 255);
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 70%;
+    text-align: center;
+
+    
+}
+
+.profile-photo:hover {
+	filter: blur(2px);
+}
+
+#download-button{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: rgba(92, 16, 16, 0.356);
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+
