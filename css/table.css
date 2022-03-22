@@ -1,0 +1,42 @@
+/* table {
+    border: 2px solid #000;
+    border-collapse: separate;
+    border-spacing: 5px;
+    empty-cells: hide;
+}
+
+th {
+    border: 2px solid rgba(87, 182, 63, 0.808);
+}
+
+td {border: 2px solid rgb(37, 35, 158)}
+
+.unic{
+    width: 320px;
+    height: 120px;
+    text-align: center; */
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: justify; */
+    /* text-align: initial; */
+    /* text-align: inherit; */
+    /* ... */
+    /* vertical-align: baseline; */
+    /* vertical-align: top; */
+    /* vertical-align: middle; */
+    /* vertical-align: bottom; */
+    /* vertical-align: initial; */
+    /* vertical-align: inherit; */ 
+    /* background-image: url(../img/3.jpg); 
+} */
+
+.tableTwo{
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+
+th {
+    border: 2px solid #000;
+}
+
+td {border: 2px solid #000}
