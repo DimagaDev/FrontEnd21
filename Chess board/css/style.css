@@ -1,0 +1,24 @@
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 55px auto;
+}
+
+tr {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
