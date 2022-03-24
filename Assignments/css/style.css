@@ -28,7 +28,12 @@ header, footer{
     background: rgb(10, 121, 136);
     box-shadow: 0px 0px 15px #333;
     display: flex; 
+
     
+}
+
+footer p{
+    margin-left: 10px;
 }
 
 
@@ -67,6 +72,9 @@ header{
     box-shadow: 0px 0px 10px #ccc;
     border-radius: 5px;
 }
+#download-button:hover {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(92, 16, 16, 0.356);
+}
 
 .contact-flex{
     display: flex;
@@ -89,7 +97,7 @@ header{
     height: 40px;
 }
 
-div{
+.common{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 10px;
@@ -99,5 +107,70 @@ div{
 h4 {
     margin-top: 10px;
 }
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+  
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(10, 121, 136);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  
+  input[type=submit]:hover {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(92, 16, 16, 0.356);
+}
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  #contactTitle {
+      margin-left: 10px;
+      margin-top: 10px;
+      font-size: 25px;
+  }
 
 
