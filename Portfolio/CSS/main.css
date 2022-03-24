@@ -1,0 +1,14 @@
+.mainImg {
+    width: 300px;
+    /* border: 5px solid rgba(0, 0, 0, 0.4); */
+    box-shadow: -6px -6px 6px rgba(18, 126, 32, 0.467);
+}
+
+.mainImg:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    box-shadow: -16px -26px 11px rgba(20, 22, 187, 0.467);
+
+    /* transform: scale(1.1); */
+    /* transform: rotate(180deg); */
+}

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Lobster', cursive;
+    background-color: #b4b4b4;
+}
+
+/* nav {
+    margin-top: 10px;
+    width: auto;
+    height: 28px;
+    padding: 0px;
+    background:rgb(211, 189, 94);
+    border: solid 3px;
+    border-color: rgb(241, 11, 11); 
+} */
+
+nav ul {
+    background-color: #efe5d0;
+    margin: 0px;
+    list-style-type: none;
+    padding: 5px 0px 5px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+   nav ul li {
+    display: inline; /*из столбика в строку, в линию*/
+    padding: 6px;
+}
+   nav ul li a:link, nav ul li a:visited {
+    color: #954b4b;
+    border-bottom: none;
+    font-weight: bold;
+}
+   nav ul li.selecteda {
+    background-color: #bd9647;
+}
+
+article {
+    width: 1000px;
+    margin: 40px auto;
+    padding: 20px 150px 60px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
+}
+
+#main {
+    border: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+
+#main2 {
+    color:rgb(15, 8, 80);
+}
+
+#dog {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 300px;
+    z-index: 10;
+}
+
+/* Transform */
+#dog:hover {
+    -o-transform: scaleY(1.2);
+    -ms-transform: scaleY(1.2);
+    -moz-transform: scaleY(1.2);
+    -webkit-transform: scaleY(1.2);
+    transform: scaleY(1.9) scaleX(1.5) skew(10deg, -5deg);
+    transition: 0.3s steps(30, end);
+}
+
+h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Effect */
+h2 span {
+    display: inline-block;
+    /* margin: 15px; */
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s linear;
+    /* transition: 3s steps(10, end); */
+}
+h2 span:nth-child(1) {
+    background: rgb(176, 208, 216);
+}
+h2 span:nth-child(1):hover {
+    /* box-shadow: 200px 0 0 0 rgba(68, 68, 68, 0.8) inset; */
+    color: rgb(223, 6, 6);
+    background:#f8f8f8; ;
+}
+
+.p span {
+    display: inline-block;
+    /* margin: 15px; */
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s linear;
+    /* transition: 3s steps(10, end); */
+}
+.p span:nth-child(1) {
+    /* background: rgb(176, 208, 216); */
+}
+.p span:nth-child(1):hover {
+    box-shadow: 500px 0 0 0 rgba(68, 68, 68, 0.8) inset;
+    color: aqua;
+}
+
+#logo {
+    float: left;
+}
+
+/* Filter */
+#logo:nth-child(1):hover img {
+    filter: blur(5px);
+    transition: 0.8s linear;
+}
+
+.slogan {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    font-size: .7rem;
+    text-align: right;
+    color: #909090;
+    width: 30%;
+}
+
+/* main */
+.clearFix::before, .clearFix::after{
+    content: '';
+    display: table;
+}
+/* вытаскиваем лого из маин */
+.clearFix::after {
+    clear: both;
+}
+
+#logo img {
+    width: 100px;
+}
+
+.alignleft {
+    float: left;
+    width: 60px;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    width: 100px;
+    margin-left: 15px;
+}
+
+.block {
+    padding: 30px;
+}
+
+/* псевдокласс четные нечетные*/
+.block:nth-child(odd) {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+}
+
+#center {
+    text-align: center;
+    color:rgba(68, 68, 68, 0.7)
+}
