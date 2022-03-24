@@ -1,0 +1,92 @@
+body {
+    text-align: center;
+}
+h1{
+    color: rgb(83, 83, 83);
+}
+
+p{
+    font-size: 14px;
+}
+.box{
+    width: 50%;
+    margin: 40px auto;
+}
+div, h2 {
+    transition: .5s ease-in-out;
+}
+h2{
+    color: rgb(19, 235, 102);
+    text-shadow: 1px 1px 0 rgb(199, 209, 52);
+}
+h2:hover{
+    text-shadow: 1px 1px 0 rgb(199, 209, 52),
+    2px 2px 0 red,  3px 3px 0 green,  4px 4px 0 blue;
+}
+.one, .two, .three {
+    border: 5px solid transparent;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.one{
+    background-color: aqua;
+}
+.one:hover{
+    border: 5px groove red;
+    background-color: #f2ebd8;
+    border-top-left-radius: 100% 20px;
+    border-bottom-right-radius: 100% 20px;
+}
+
+.two{
+    background-color: #83817c;
+}
+.two:hover{
+    border: 5px inset #83817c;
+    background-color: #ddd9cf;
+}
+.three{
+    background-color: #ecd9a8;
+    border: 5px solid red;
+    outline: 5px solid transparent;
+}
+.three:hover{
+    outline: 5px solid green;
+    outline-offset: 7px;
+}
+.four{
+    width: 200px;
+    height: 100px;
+    background-color: #83817c;
+    margin: 0 auto;
+}
+.four:hover{
+    width: 250px;
+    height: 80px;
+    box-shadow: 0 15px 15px -10px rgba(0, 0, 0, .5);
+}
+.five{
+    width: 100px;
+    height: 100px;
+    background-color: #ddd9cf;
+    margin: 0 auto;
+    position: relative;
+    left: 50px;
+}
+.five:hover{
+    left: -50px;
+}
+
+.six{
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: radial-gradient(#9ed8d3 2px, transparent 3px);
+    background-size: 10px 10px;
+}
+
+.six:hover{
+    background-size: 20px 20px;
+}

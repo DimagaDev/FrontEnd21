@@ -1,0 +1,10 @@
+.shake:invalid{
+    border: 10px solid red;
+    animation: shake 300ms;
+}
+
+@keyframes shake {
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}

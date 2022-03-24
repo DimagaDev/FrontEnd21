@@ -14,7 +14,6 @@ div {
 	box-shadow: 0 0 0 5px rgba(112, 112, 112, 0.9);
 }
 div:after {
-	content: attr(class);
 	top: 6px;
 	left: 6px;
 }

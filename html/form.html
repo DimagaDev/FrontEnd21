@@ -3,10 +3,30 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>form</title>
-		<link href="css/form.css" rel="stylesheet" />
+		<link href="../css/form.css" rel="stylesheet" />
 		<style></style>
 	</head>
 	<body>
+        <h1>Example code: </h1>
+        <pre>
+            &lt;form&gt; 
+                &lt;p&gt;
+                &lt;b>Ваше имя: &lt;/b&gt;&lt;br/&gt;
+                        &lt;input type="text" class="shake" size="30" 
+                    pattern="[a-z]*"&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                    Comment: &lt;br/&gt;
+                    &lt;textarea name="comment" cols="40" rows="3"&gt;
+                    &lt;/textarea&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                    &lt;input type="submit" value="Отправить" /&gt;
+                    &lt;input type="reset" value="Очистить" /&gt;
+                &lt;/p&gt;
+            &lt;/form&gt;
+        </pre>
+
         <!-- <h2>Синтаксис form</h2>
         <form>
             <p>
@@ -64,9 +84,22 @@
         <br />
         <input  type="range" />
 
+
+
         <form >
             <p>
-                
+                <b>Ваше имя: </b><br/>
+                <input type="text" class="shake" size="30" 
+                pattern="[a-z]*">
+            </p>
+            <p>
+                Comment: <br/>
+                <textarea name="comment" cols="40" rows="3">
+                </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Отправить" />
+                <input type="reset" value="Очистить" />
             </p>
         </form>
 
