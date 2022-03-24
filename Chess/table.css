@@ -1,0 +1,32 @@
+.body {
+    background-color: #ffffff;
+}
+.tableTwo {
+    text-align: center;
+    background-color: #d9dfaa;
+}
+.center {
+    display: inline-block;
+}
+.board {
+    border-collapse: collapse;
+}
+.board tr td {
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle; 
+    background: #7e3e02;
+}
+.board tr:nth-child(odd) td:nth-child(even) {
+    background: #ffffff;
+}
+
+.board tr:nth-child(even) td:nth-child(odd) {
+    background: #ffffff;
+}
+
+td {
+    font-size: 70px;
+}
