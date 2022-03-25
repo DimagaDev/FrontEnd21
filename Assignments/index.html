@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header>
-        <img class="profile-photo" src="img/DarynaTokmachovaResume.png" alt="Daryna Tokmachova Resume" width="200" height="400">
+        <img class="profile-photo" id="profilePhoto" src="img/DarynaTokmachovaResume.png" alt="Daryna Tokmachova Resume" width="200" height="400">
         <br>
         <h1>Hi, I'm Daryna Tokmachova</h1>
         <h2>JavaScript Front-end Developer</h2>  
@@ -151,12 +152,13 @@
     </div>
     <hr> 
     <h3 id="contactTitle">Please contact me here</h3>
-    <div class="row">
+    <form action="">
+      <div class="row">
         <div class="col-25">
           <label for="fname">First Name</label>
         </div>
         <div class="col-75">
-          <input type="text" id="fname" name="firstname" placeholder="Your name">
+          <input type="text" id="fname" name="firstname" placeholder="Your name" pattern="[A-Za-z]*" required>
         </div>
       </div>
       <div class="row">
@@ -164,7 +166,7 @@
           <label for="lname">Last Name</label>
         </div>
         <div class="col-75">
-          <input type="text" id="lname" name="lastname" placeholder="Your last name">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name" pattern="[A-Za-z]*" required>
         </div>
       </div>
       <div class="row">
@@ -172,7 +174,7 @@
           <label for="comp">Company</label>
         </div>
         <div class="col-75">
-          <input type="text" id="company" name="company" placeholder="Your company">
+          <input type="text" id="company" name="company" placeholder="Your company" required>
         </div>
       </div>
       <div class="row">
@@ -180,7 +182,7 @@
           <label for="subject">Subject</label>
         </div>
         <div class="col-75">
-          <textarea id="subject" name="subject" placeholder="Please leave a message" style="height:200px"></textarea>
+          <textarea id="subject" name="subject" placeholder="Please leave a message" style="height:200px" required></textarea>
         </div>
       </div>
       <div class="row">
@@ -194,4 +196,5 @@
 
     </footer>
 </body>
+<script src="js/script.js"></script>
 </html>
