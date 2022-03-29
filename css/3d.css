@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	text-align: center;
+}
+div {
+	height: 130px;
+	width: 250px;
+}
+h3 {
+	margin: 0 0 30px;
+}
+.container {
+	height: 160px;
+	margin: 0 auto 1em;
+	perspective: 500px;
+}
+.top,
+.bottom {
+	position: absolute;
+	bottom: 0;
+	transform: rotateX(45deg);
+	border-radius: 2px;
+	animation: rotate 5s infinite;
+}
+.top {
+	background: rgba(255, 239, 0, 0.9);
+}
+.bottom {
+	transform: rotateX(90deg);
+	background: rgba(255, 37, 134, 0.9);
+}
+.style-flat .top,
+.style-flat .bottom {
+	transform-style: flat;
+}
+.style-3d .top,
+.style-3d .bottom {
+	transform-style: preserve-3d;
+}
+@keyframes rotate {
+	50% {
+		transform: none;
+	}
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.container {
+	position: relative;
+	display: inline-block;
+	height: 120px;
+	margin: 0 2em 2em 0;
+	opacity: 0.7;
+	border-radius: 5px;
+	background: #e4e1e4;
+	transform-style: preserve-3d;
+}
+.transform {
+	position: absolute;
+	bottom: 0;
+	background: rgba(65, 245, 254, 0.5);
+	border-radius: 5px;
+	animation: notransform 5s infinite;
+}
+.translate3d {
+	transform: translate3d(20px, 20px, 20px);
+}
+.scale3d {
+	transform: scale3d(0, 0, 1);
+	animation-delay: 0.5s;
+}
+.rotate3d {
+	transform: rotate3d(2, 1, 3, -360deg);
+	animation-delay: 1s;
+}
+.rotateX {
+	transform: rotateX(180deg);
+	animation-delay: 1.5s;
+}
+.rotateY {
+	transform: rotateY(180deg);
+	animation-delay: 2s;
+}
+.rotateZ {
+	transform: rotateZ(180deg);
+	animation-delay: 2.5s;
+}
+@keyframes notransform {
+	50% {
+		transform: none;
+	}
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
