@@ -203,6 +203,13 @@ nav ul a:hover {
 	width: 30px;
 }
 
+/* About Me section */
+
+.skill-mf {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
 /* gallery.css */
 .portfolio-item {
 	margin: 0.5rem 0;
@@ -398,6 +405,9 @@ textarea {
 		width: 120px;
 	}
 
+	.testimonial {
+		flex-wrap: wrap;
+	}
 	.tab,
 	.tab:hover {
 		flex: 0 0 calc(50% - 30px);
@@ -441,6 +451,8 @@ textarea {
 		display: block;
 	}
 
+
+
 	.mobile-toggle span {
 		width: 30px;
 		height: 4px;
@@ -476,6 +488,9 @@ textarea {
 		width: 100%;
 		text-align: center;
 	}
+
+	
+
 }
 
 @media (max-width: 480px) {
