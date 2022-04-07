@@ -113,7 +113,8 @@ a:hover {
 
 header {
 	height: 500px;
-	background: url(../Image/header.jfif) no-repeat center #0f1384;
+	background: url(../Image/header.jfif) 
+		no-repeat center #0f1384;
 	background-size: cover;
 	color: #fff;
 	display: -webkit-flex;
