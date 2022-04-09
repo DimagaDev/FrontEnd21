@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: rgb(75, 75, 75);
+}
+
+h1, h2, h3, a {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    color: rgb(105, 105, 105);
+}
+
+.container{
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-basis: 10vh;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+header h1 {
+    align-self: center;
+}
+
+
+header nav a {
+
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+header nav a:hover, 
+header nav a.active {
+    border-bottom: 2px solid rgba(105, 105, 105, 0.5);
+}
+
+main{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+
+main > aside {
+    flex-basis: 20%;
+    padding: 1% 5%;
+
+}
+
+
+main > aside > div > * {
+    border-bottom: 2px solid rgba(105, 105, 105, 0.3);
+    margin-bottom: 2vh;
+}
+
+main > aside > div > h3{
+    text-transform: capitalize;
+} 
+
+.news{
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+}
+
+.news > * {
+    font-size: 1.1rem;
+    padding-bottom: 7px;
+}
+
+.news > h2 > a {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.news > strong,
+.news > em{
+    color: rgb(155, 155, 155);
+    font-size: 0.7rem;
+}
+
+.news > strong{
+    text-transform: uppercase;
+}
+
+main > section {
+    flex: 1 1 55%;
+}
+
+main > section > article{
+    padding: 1% 5%;
+}
+
+main > section > article > *{
+    display: block;
+    padding-bottom: 1.5vh;
+}
+
+main > section > article > h2{
+    color: rgb(63, 63, 63);
+    font-size: 1.5rem;
+}
+
+main > section > article > em {
+    color: rgb(155, 155, 155);
+    font-size: 0.9rem;
+}
+
+main > section > article > img{
+    width: 90%;
+}
+
+main > section + aside{
+    flex-basis: 20%;
+}
+
+
+footer{
+    flex-basis: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+/* SEARCH BAR */   
+  
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    background-color: whitesmoke;
+}
+  
+/* PHOTOS IN THE SIDE MENU*/
+
+/* Add a grid for photos */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+/* Get the same size of each image  */
+.photos img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+
+
+@media screen and (min-width: 1025px)  {
+
+    /* The search bar should be aligned with the navigation bar */
+    header >  div > input {
+        display: none;
+    }
+
+    .topnav input[type=text] {
+        display: block;
+    }
+    /* Adjust padding */
+    main{
+        padding-top: 3vh;
+    }
+
+}    
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Adjust the article's illustration  */
+    main > section > article > img {
+        width: 90%;
+    }
+    /* The photos should be in a grid with 4 rows and 2 columns */
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        width: 40%;
+
+    }
+    /* The photos should be bigger */
+    .photos img {
+        width: 70px;
+        height: 70px;
+    }
+    /* Add a wider margin */
+    aside {
+        margin-right: 30px;
+    }
+    /* Display the search bar above the navigation menu  */
+    .topnav input[type=text] {
+        display: none;
+
+    }
+    header > div > input {
+        float: right;
+        border: none;
+        display: block;
+        padding: 6px;
+        margin-top: 60px;
+        font-size: 17px;
+        background-color: whitesmoke;
+        margin-right: 50px;
+
+    }
+
+    h1 > a > img {
+        float: left;
+        display: block;
+    }
+
+    header {
+        display: contents;
+    }
+    nav {
+        margin-left: 20px;
+    }    
+    /* Adjust padding */
+    main{
+        padding-top: 3vh;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    header{
+        flex-basis: auto;
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    main > aside{
+        flex-basis: 20vh;
+    }
+    main > aside > div {
+        padding: 0% 0%;
+    }
+    main > section {
+        flex-basis: auto;
+        order: -1;
+    }
+    /* The photos should be in a grid with 1 row and 6 columns */
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 5px;
+    }
+    .photos img {
+        width: 100%;
+        height: auto;
+    }
+    /* Hide the 7th and 8th images  */
+    .photos img:nth-child(7), .photos img:nth-child(8) {
+        display: none;
+    }
+
+
+    /* Display the search bar above the navigation menu  */
+    .topnav input[type=text] {
+        display: none;
+
+    }
+    h1 > a > img {
+        float: left;
+        display: block;
+    }
+    header > div > input {
+        float: right;
+        display: block;
+        border: none;
+        margin-top: 10px;
+        padding: 6px;
+        font-size: 17px;
+        background-color: whitesmoke;
+        margin-right: 10px;
+    }
+    header {
+        display: contents;
+    }
+    .list {
+        display: none;
+    }
+
+    header nav a {
+
+        padding: 10px 10px;        
+    }
+    h1 > a > img {
+        width: 100px;
+        height: auto;
+
+    }
+    /* Adjust padding */
+    nav {
+        padding: 1% 2%
+    }
+    article {
+        padding: 1% 2%;
+    }
+    aside {
+        padding: 1% 2%
+    }
+    
+}
+
