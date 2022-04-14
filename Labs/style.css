@@ -1,0 +1,340 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300&display=swap');
+
+* {
+    font-family: 'Khula', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+ul, li {
+    list-style: none;
+
+}
+.p {
+    align-self: center;
+    font-size: 18px;
+}
+
+
+h2, h3 {
+    font-weight: bold;
+    font-size: 33.06px;
+    color: #070707;
+}
+
+/* HEADER */
+
+li a {
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+    height: 60px;
+    padding-left: 5Px;
+}
+
+nav {
+    border-bottom: 2px solid #828282;
+    display: 1 1 auto;
+    max-width: 947px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+
+}
+
+nav a:hover {
+    color: #070707
+}
+
+
+
+/* DESCRIPTION WITH PHOTO */
+
+.container{
+    max-width: 940px;
+	margin: 0 auto;	
+}
+
+.desc {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 47.34px;
+    color: #070707;
+    text-align: left;
+}
+
+.profilePhoto  img:nth-child(1){
+    margin-top: 20px;
+    max-width: 100%
+}
+
+.profilePhoto  img:nth-child(2){
+    display: none;
+}
+
+div.desc > p {
+    align-self: center;
+}
+.desc > p:nth-child(4) {
+    transform: rotate(270deg);
+}
+
+.desc > img {
+    display: none;
+}
+
+
+/* ABOUT ME */
+
+.aboutMe {
+    background-color: #f6f6f6;
+    max-width: 947px;
+    height: 506px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe h2 {
+    margin-top: 102px;
+}
+
+.aboutMe p {
+    margin-top: 17px;
+}
+
+/* SKILLS */
+
+.skills {
+    background-color: white;
+    max-width: 947px;
+    height: 506px;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-top: 61px;
+}
+
+.skills p {
+    margin-top: 69.1px;
+}
+
+.tools {
+    margin-top: 84px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tools img {
+    max-width: 20%;
+    height: auto;
+}
+
+
+
+/* PORTFOLIO */
+
+.portfolio {
+    background-color: #f6f6f6;
+    max-width: 947px;
+    height: 2253px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio h2 {
+    margin-top: 62px;
+}
+
+.portfolio :nth-child(2) {
+    margin-top: 47px;
+}
+
+.portfolio :nth-child(4), .portfolio :nth-child(6) {
+    margin-top: 111px;
+}
+
+.portfolio a {
+    margin-top: 45px;
+    color: #070707;
+}
+
+/* CONTACTS */
+
+
+.contacts {
+    background-color: white;
+    max-width: 947px;
+    height: 606px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts h2 {
+    margin-top: 61px;
+}
+
+div.contacts > p {
+    margin-top: 20px;
+}
+
+.contacts button {
+    margin-top: 20px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    align-self: center;
+    background-color: #070707;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 30px;
+    width: 170px;
+}
+
+.contacts button:hover {
+    background-color: rgb(97, 97, 97);
+}
+
+div.contacts > p:nth-child(5){
+    margin-top: 45px;
+}
+
+.social {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 342px;
+    align-self: center;
+
+}
+
+/* ADAPTATION */
+
+@media screen and (max-width: 768px) and (min-width: 375px) {
+
+    /* DESCRIPTION WITH PHOTO */
+    nav {
+        display: none;
+    }
+
+    .desc {
+        flex-direction: column;
+        margin-left: 26px;
+
+    }
+    .profilePhoto {
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+    
+    .desc p:nth-child(4) {
+        display: none;
+    }
+
+    .desc p:nth-child(3) {
+        align-self: auto;
+    }
+    .desc img {
+        display: block;
+        width: 33px;
+        align-self: flex-end;
+        margin-right: 33px;
+    }
+    /* PORTFOLIO */
+
+    .portfolio img {
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+
+
+    /* CONTACTS */
+
+    .contacts button {
+        width: 70%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    /* DESCRIPTION WITH IMAGE */
+
+    .profilePhoto  img:nth-child(1){
+        display: none;
+    }
+    .profilePhoto  img:nth-child(2){
+        display: block;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    /* SKILLS */
+
+    .tools {
+        margin-top: 84px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .skills {
+        height: 1100px;  
+    }
+    .tools {
+        margin-top: 60px;
+    }
+    .tools img {
+        margin-bottom: 30px;
+        max-width: 40%;
+    }
+    .portfolio {
+        height: 1193px;
+    }
+
+    
+}   
+
+@media screen and (max-width: 768px) and (min-width: 460px) {
+
+    .portfolio {
+        height: 1400px;
+    }
+
+}
+
+@media screen and (max-width: 460px) and (min-width: 375px) {
+
+    .portfolio {
+        height: 1300px;
+    }
+
+}
