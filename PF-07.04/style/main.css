@@ -1,0 +1,240 @@
+            @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&display=swap');
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            ul,
+            li {
+                list-style: none;
+            }
+            
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-right: 250px;
+                margin-left: 250px;
+                max-width: 940px;
+                font-family: 'Khula', sans-serif;
+            }
+            
+            header {
+                margin-top: 33px;
+            }
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #828282;
+                padding-bottom: 32px;
+            }
+            
+            nav a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22px;
+                color: #828282;
+            }
+            
+            .active {
+                color: #070707;
+            }
+            
+            .active:hover {
+                color: #828282;
+            }
+            
+            nav a:hover {
+                color: #070707;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .descLogo {
+                display: contents;
+            }
+            
+            .desc {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 31px;
+                margin-bottom: 30px;
+            }
+            
+            .desc h1 {
+                font-size: 47px;
+                line-height: 59px;
+                color: #070707;
+            }
+            
+            .desc_item {
+                margin-top: 94px;
+                font-size: 18px;
+                line-height: 22px;
+                color: #070707;
+            }
+            
+            .eng {
+                transform: rotate(-90deg);
+            }
+            
+            .s2 {
+                background: #F6F6F6;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .aboutMe h2 {
+                margin-top: 120px;
+                font-size: 34px;
+                line-height: 42px;
+                text-align: center;
+                color: #070707;
+            }
+            
+            .aboutMe p {
+                padding-top: 43px;
+            }
+            
+            .about_text {
+                margin-bottom: 96px;
+                padding: 0 215px;
+                margin-top: 28px;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #070707;
+                text-align: center;
+            }
+            
+            .s3 h2 {
+                margin-top: 91px;
+                font-size: 34px;
+                line-height: 42px;
+                color: #070707;
+                text-align: center;
+            }
+            
+            .s3 p {
+                margin-top: 69px;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #070707;
+            }
+            
+            .skill_item {
+                display: flex;
+                justify-content: center;
+                gap: 45px;
+                margin-top: 83px;
+                margin-bottom: 111px;
+            }
+            
+            .s4 {
+                background: #F6F6F6;
+            }
+            
+            .s4 h2 {
+                margin-top: 112px;
+                font-size: 34px;
+                line-height: 42px;
+                text-align: center;
+                color: #070707;
+            }
+            
+            .port_items1,
+            .port_items2,
+            .port_items3 {
+                display: contents;
+            }
+            
+            .port_items1 img {
+                margin-top: 47px;
+            }
+            
+            .port_items1 a {
+                margin-top: 45px;
+                color: black;
+                text-align: center;
+            }
+            
+            .port_items2 img {
+                margin-top: 99px;
+            }
+            
+            .port_items2 a {
+                margin-top: 45px;
+                color: black;
+                text-align: center;
+            }
+            
+            .port_items3 img {
+                margin-top: 99px;
+            }
+            
+            .port_items3 a {
+                margin-top: 45px;
+                margin-bottom: 96px;
+                color: black;
+                text-align: center;
+            }
+            
+            .footer_main {
+                text-align: center;
+            }
+            
+            .footer_main h2 {
+                margin-top: 114px;
+            }
+            
+            .footer_main p {
+                margin-top: 20px;
+                line-height: 22px;
+                text-align: center;
+                color: #070707;
+            }
+            
+            .btn {
+                background-color: #070707;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+            
+            .sand_me {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .sand_me a {
+                text-decoration: none;
+                color: rgb(247, 241, 241);
+                border-radius: 30px;
+                padding: 13px 28px;
+                margin-top: 28px;
+            }
+            
+            .footer_links {
+                display: flex;
+                justify-content: center;
+                gap: 60px;
+                margin-top: 85px;
+            }
+            
+            .footer_desc {
+                margin-top: 45px;
+                margin-bottom: 123px;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #828282;
+            }
