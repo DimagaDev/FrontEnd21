@@ -1,0 +1,148 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1600px;
+    margin-left: 141px;
+    margin-right: 95px;
+}
+
+
+li {
+    list-style: none;
+    margin-left: 34px;
+
+}
+li > a {
+    font-size: 16px;
+    color: #B8BECD;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 54px;
+    align-items: baseline;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.text-image-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.images-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px;
+    max-width: 1200px;
+}
+
+.blogPostCard {
+    display: flex;
+    align-items: baseline;
+}
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.blogPostCard-text {
+    text-align: right;
+    float: right;
+    margin-left: auto;
+    color: #FB8F1D;
+}
+
+.blogPostCard-link {
+    color: #FB8F1D;
+}
+
+
+h1 {
+    font-weight: bolder;
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.heading-h3-bold {
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.h2 {
+    max-width: 481px;
+}
+
+.filterGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.btn {
+    height: 44px;
+    width: 132px;
+    background-color: white;
+    border: 1px solid #FB8F1D;
+    border-radius: 5px;
+    color:  #FB8F1D;   
+    font-size: 16px; 
+}
+
+.btn-orange {
+    background-color: #FB8F1D;
+    color: white;  
+}
+
+p {
+    font-size: 17px;
+}
+
+.text-grey {
+    color: #7D7987;
+    max-width: 450px;
+    line-height: 30px;
+}
+
+.text-orange {
+    color:  #FB8F1D;      
+}
+
+.selectButtons {
+    margin: 10px 10px 10px 0;
+    width: 22Opx;
+    height: 52px;
+    border: 0.8px solid #AFB0B9;
+}
+
+.active {
+    font-weight: bold;
+    color: black;
+}
+

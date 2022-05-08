@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="header">
+               <div>
+                   <img src="img/logo.svg" alt="logo">
+               </div>
+               <div>
+                    <nav>
+                        <ul>
+                            <li><a class="active" href="#">Home</a></li> 
+                            <li><a href="#destinations">Destinations</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#partner">Partner</a></li>
+                            <li><button class="btn btn-white">Login</button></li>
+                            <li><button class="btn btn-orange">Register</button></li>
+                        </ul>
+                    </nav>
+               </div>               
+           </div>
+        </header>
+        <section id="destinations">
+            <div class="text-image-block">
+                <div class="leftSide">
+                    <h1>Explore and  <br>Travel</h1>
+                    <p class="heading-h3-bold">Holiday finder</p>
+                    <img src="img/line.svg" alt="line">
+                    <div class="filterGrid">
+                        <select name="location" class='selectButtons' id="location-select">
+                            <option value="">Location</option>
+                        </select>
+                        <select name="activity" class='selectButtons' id="activity-select">
+                            <option value="">Activity</option>
+                        </select>
+                        <select name="grade" class='selectButtons' id="grade-select">
+                            <option value="">Grade</option>
+                        </select>
+                        <select name="date" class='selectButtons' id="date-select">
+                            <option value="">Date</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-orange">Explore</button>
+                </div>
+                <div class="rightSide">
+                    <img src="img/firstBlockImg.svg" alt="travel">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="text-image-block">
+                <div class="leftSide">
+                    <img src="img/secondBlockImg.svg" alt="travel">
+                </div>
+                <div class="rightSide">
+                    <div class="h2">
+                        <h2>A new way to explore the world</h2>
+                    </div>
+                    <p class="text-grey">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect 
+                        trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                    <button class="btn btn-orange">Learn more</button>
+                </div>                
+            </div>
+        </section>
+        <section>
+            <div class="images-block">
+                <div class="blogPostCard">
+                    <div class="h2">
+                        <h2>Featured destinations</h2>
+                    </div>
+                    <p class="blogPostCard-text">View all <a class="blogPostCard-link" href="#">></a></p>
+                </div>
+                <div class="images">
+                    <img src="img/destinationCard1.svg" alt="travel">
+                    <img src="img/destinationCard2.svg" alt="travel">
+                    <img src="img/destinationCard3.svg" alt="travel">
+                    <img src="img/destinationCard4.svg" alt="travel">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
