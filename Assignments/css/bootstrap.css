@@ -50,11 +50,6 @@
     font-weight: bold;
 }
 
-nav {
-    background-color: #00334F;
-    height: 80px;
-    width: auto;
-}
 
 section {
     height: 600px;
@@ -84,13 +79,33 @@ h1 {
     margin-top: 100px;
 }
 
-a {
-    text-decoration: none;
+.logo {
+
     font-size: 1.75rem;
 }
+
+a {
+    text-decoration: none;
+}
+
 h2 {
     font-size: 1.75rem;
 }
+
+.menu > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: #00334F;
+}  
 
 .menu > ul > li > a {
     margin-left: 50px;
@@ -102,6 +117,10 @@ h2 {
 }
 
 .top-30 {
+    margin-top: 30px;
+}
+
+.top-15 {
     margin-top: 30px;
 }
 .portfolio-item {
@@ -141,6 +160,12 @@ h2 {
     text-align: left;
 }
 
+.align-left {
+    align-self: flex-start;
+    margin-left: 50px;
+    width: 80%;
+}
+
 .btn {
     width: 120px;
     height: 50px;
@@ -157,3 +182,87 @@ h2 {
 .section-smaller {
     height: 420px;
 }
+
+.invalid-feedback {
+    display: none;
+}
+
+.form-text{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 0 20px 0;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    width: 200px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+    font-size: 20px;
+    float: left;
+  }
+
+.submit-btn {
+    background-color: #0ABAB5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 20px 0px;
+    cursor: pointer;
+    float: left;
+    border-radius: 5px;
+}
+
+label {
+    color: grey;
+    float: left;
+    font-size: 20px;
+}
+
+label:hover {
+    font-size: 15px;
+    color: lightgrey;
+}
+
+.form {
+    display: flex;
+}
+
+.bg-grey {
+    background-color: #00334F;
+}
+
+
+.footer {
+    height: 200px;
+    justify-content: space-around;
+}
+
+.bottom {
+    height: 50px;
+    text-align: center;
+}
+
+.line-height-50 {
+    line-height: 50px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.green {
+    color: green;
+}
+
