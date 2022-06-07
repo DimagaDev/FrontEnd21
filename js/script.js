@@ -548,18 +548,135 @@
 // console.log(res)
 
 
-function hello(name){
-	let hi = 'hello '
-	return hi + name
+// function hello(name){
+// 	let hi = 'hello '
+// 	return hi + name
+// }
+
+// let str = hello('Vasia')
+// console.log(str) // 'Hello Vasia'
+
+// let one = 10, two = 20; // global 
+
+// function Change (){
+// 	document.write('in func : one = ', one, ', two = ', two, '<br>')
+// 	let temp = one; // local
+// 	one = two;
+// 	two = temp;
+// 	document.write('in func : one = ', one, ', two = ', two, '<br>')
+// }
+
+// Change()
+
+// document.write('out func : one = ', one, ', two = ', two, '<br>')
+// document.write('temp = ', temp)
+
+
+// function go (a, b){
+// 	document.write('a = ', a, ', b = ', b, '<br>');
+// }
+
+// go(1)
+// go(1, 2)
+// go(1, 2, 3)
+
+// let i = 10;
+
+
+// const sayHi = function (){
+// 	for(let i = 0; i < arguments.length; i++){
+// 		document.write('Hello ', arguments[i], '<br>')
+// 	}
+// }
+
+// sayHi(1, 'Max', 'Gora', 'Dobi', 'Some')
+
+
+// const someFunc = (a, b) => {
+// 	console.log('a = ', a, ', b = ', b)
+// }
+
+// someFunc(10, 20)
+
+
+// let cubOne, cubTwo, countPlay = 0, countKonp = 0; 
+
+// const Random = () => {
+// 	return Math.floor(Math.random() * 5 + 1)
+// }
+
+// const CheakWin = () => {
+// 	return countPlay > countKonp ? 'You WIN!!!' : 'You DNO!!!'
+// }
+
+// const GameLoop = () => {
+// 	for(let i = 0; i < 6; i++){
+// 		if(i % 2 == 0){
+// 			alert('Ход игрока нажмите Ok для броска ')
+// 			cubOne = Random()
+// 			cubTwo = Random()
+// 			countPlay += cubOne + cubTwo
+// 			alert('cub one = ' +  cubOne + ', cub two = ' + cubTwo +  ', Score ' + countPlay)
+// 		}else{
+// 			alert('Ход II нажмите Ok для броска ')
+// 			cubOne = Random()
+// 			cubTwo = Random()
+// 			countKonp += cubOne + cubTwo
+// 			alert('cub one = ' +  cubOne + ', cub two = ' + cubTwo +  ', Score ' + countKonp)
+// 		}
+// 	}
+// }
+
+// const Game = () => {
+// 	GameLoop();
+// 	CheakWin();
+// }
+
+// Game()
+
+// for(let i = 0; i < 5; i++){
+// 	console.log(Random())
+// }
+
+// function factorial(number){ // number = 1 
+// 	if(number !== 1){
+// 		//       6 * 5 * 4 * 3 * 2 * 1
+// 		return number * factorial(--number)
+// 	}else{
+// 		return number
+// 	}
+// }
+
+// console.log(factorial(6))
+
+// function Pow (x, n){
+// 	// if(n !== 1){
+// 	// 	return x * Pow(x, --n)
+// 	// }else{
+// 	// 	return x
+// 	// }
+
+// 	return n !== 1 ? x * Pow(x, --n) : x;
+// }
+
+// console.log(Pow(2, 8))
+
+
+// function fib(n){
+// 	//                        8            7
+// 	return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+// }
+
+// console.log(fib(9))
+
+let el = []
+
+for (let i = 0; i < 3; i++){
+    let temp = [] 
+    for(let j = 0; j < 3; j++){
+        temp[j] = Math.floor(Math.random() * 8)
+    }
+    el[i] = temp
 }
 
-let str = hello('Vasia')
-console.log(str) // 'Hello Vasia'
-
-
-
-
-
-
-
-
+console.log(el)

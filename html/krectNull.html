@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>KrestINull</title>
+		<script src="../js/KrestINull.js"></script>
+	</head>
+	<body>
+		<!-- стиль оформления игрового поля--->
+		<style>
+			td {
+				border-style: solid;
+				border-width: 2px;
+				padding: 2px;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+			}
+			table {
+				border-color: Blue;
+				color: Green;
+				cursor: pointer;
+				border-style: solid;
+				border-width: 5px;
+				padding: 2px;
+			}
+		</style>
+		<!-- для каждоя ячейки прописываем
+обработчик события клика мыши-->
+		<table> 
+			<tr>
+				<td onclick="step(this);" id="td0"></td>
+				<td onclick="step(this);" id="td1"></td>
+				<td onclick="step(this);" id="td2"></td>
+			</tr>
+			<tr>
+				<td onclick="step(this);" id="td3"></td>
+				<td onclick="step(this);" id="td4"></td>
+				<td onclick="step(this);" id="td5"></td>
+			</tr>
+			<tr>
+				<td onclick="step(this);" id="td6"></td>
+				<td onclick="step(this);" id="td7"></td>
+				<td onclick="step(this);" id="td8"></td>
+			</tr>
+		</table>
+	</body>
+</html>
