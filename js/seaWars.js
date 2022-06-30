@@ -36,7 +36,27 @@ const randShips = (countPalub) => {
             }
         }
         if(randGorVer){
+            let tempEnd,tempStart; // 24 - 20 = 4
+            tempStart = randCoord % 10; // 4
+            tempEnd = tempStart + 90; // 4 + 90 = 94
 
+            if((randCoord - ((countPalub - 1) * 10)) >= tempStart){
+                while(true){
+                    randCoord = Math.floor(Math.random() * 99);
+                    if(CheckCoord(randCoord, countPalub, '+')) break;
+                }
+                for(let j = 0; j < countPalub * 10; j += 10){
+                    tempArr.push(randCoord - j) // 24, 14, 4
+                }
+            }else if((randCoord + ((countPalub - 1) * 10)) <= tempEnd){
+                while(true){
+                    randCoord = Math.floor(Math.random() * 99);
+                    if(CheckCoord(randCoord, countPalub, '-')) break;
+                }
+                for(let j = 0; j < countPalub; j++){
+                    tempArr.push(randCoord - j)
+                }
+            }
         }
         ships.push(tempArr)  
 }
