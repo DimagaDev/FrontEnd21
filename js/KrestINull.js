@@ -1,6 +1,8 @@
-let num = 0
+let num = 0, win;
 
 function step(event){
+    console.log(event)
+
     let tr = event.parentNode.parentNode
     if(event.innerHTML == ''){
             event.innerHTML = 'X'
@@ -16,12 +18,24 @@ function step(event){
                 botTurn(event)
             }
         num++;
-        if(num >= 5) { analiz(event)}
-    }
-    else if(num == 8) { alert('Ничья!')}
+        if(num >= 3) { analiz(event)}
+    } 
     else {
         alert('Клетка занята. Повторите ход!')
     }
+    if(num == 5) { 
+        alert('Ничья!')
+        clear(event)
+    }
+}
+
+function clear(event){
+    let tr = event.parentNode.parentNode
+    for(let i = 0; i < 9; i++){
+        tr.getElementsByTagName('td')[i].innerHTML = ''
+    }
+    win = false
+    num = 0
 }
 
 function botTurn(event){
@@ -272,10 +286,6 @@ function analiz(event){
     }
 
     if(win){
-        for(let i = 0; i < 9; i++){
-            tr.getElementsByTagName('td')[i].innerHTML = ''
-        }
-        win = false
-        num = 0
+        clear(event)
     }
 }

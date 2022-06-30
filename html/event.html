@@ -1,0 +1,111 @@
+<!DOCTYPE html />
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Events</title>
+        <script src="../js/events.js"></script>
+    </head>
+    <body> <!-- onclick="changeColor();" -->
+        <input value="Click" onclick="alert('Click on input')" type="button">
+        <input id="button" value="Sum" onclick="count()" type="button">
+
+        <img id="picSmile" src="../Image/smile.png" 
+            alt="sd" style="height: 100px;"
+            onmouseover="change2()"
+            onmouseout="change1()">
+
+
+        <button onclick="alert(this.innerHTML)">
+            <a href="#">Some text</a>
+        </button> 
+        
+        <input type="button" id="elem" value="EventListener">
+        <script>
+            const handler1 = () => {
+                alert('Спасибо!')
+            }
+            const handler2 = () => {
+                alert('Спасибо! Еще раз!')
+            }
+            elem.onclick = function(event) {
+                alert(event.type + ' на ' + event.currentTarget)
+                alert(event.clientX + ' : ' + event.clientY)
+            }
+            elem.addEventListener('click', handler1)
+            // elem.removeEventListener('click', handler1)
+        </script>
+
+        <style>
+            button{
+                transition: width 1s;
+                width: 100px;
+            }
+            .wide{
+                width: 300px;
+            }
+        </style>
+        <button id="button"
+           onclick="this.classList.toggle('wide')" >
+            Click on me
+        </button>
+        <input type="button"
+            onclick="this.style.display='none'" 
+            value="Нажми на меня чтобы спрятать!">
+        <!--///////////////////////////////////-->
+        <textarea id="area" cols="40" rows="8" 
+        placeholder="Click on me" ></textarea>
+        <script>
+            area.onmousedown = function(event) {
+                this.value = 'mouse down \n'
+            } 
+            area.onmouseup = function(event) {
+                this.value += 'mouse up \n'
+            } 
+            area.onclick = function(event) {
+                this.value += 'click \n'
+            } 
+        </script>
+
+        <p>При фокусе на поле оно изменит значение</p>
+        <label for="">
+            <input type="text" onfocus="this.value = 'Фокус'"
+            value="Изменить при фокусе" >
+        </label>
+
+        <input type="button" id="but" value="click">
+        <input type="text" id="te" size="60">
+
+        <script>
+            but.onclick = function() {
+                te.value += '-> в onclick';
+                te.onfocus();
+                te.value += '-> из onclick';
+            };
+            te.onfocus = function () {
+                te.value += ' focus '
+            }
+        </script>
+
+        <p id="line"></p>
+        <script>
+            function print(event){
+                let ev = event;
+                if(ev === undefined)
+                    ev = window.event;
+                line.innerHTML += '&#' + event.keyCode;
+            }
+            document.body.onkeydown = print;
+        </script>
+
+        <h2>Отслеживаем положение курсора мыши</h2>
+        <i> Позиция по Х <p id="X">0</p></i>
+        <i> Позиция по Y <p id="Y">0</p></i>
+        <script>
+            function Moving(e){
+                X.innerHTML = e.clientX
+                Y.innerHTML = e.clientY
+            }
+            document.body.onmousemove = Moving;
+        </script>
+    </body>
+</html>
