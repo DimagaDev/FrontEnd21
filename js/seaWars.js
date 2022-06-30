@@ -1,6 +1,6 @@
 const ships = [],
         listShips = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
-let popal = false;
+let popal = false, turn = 0;
 
 const CreateShip = () => {
     for(let i = 0; i < listShips.length; i++){
@@ -26,9 +26,10 @@ const randShips = (countPalub) => {
         ships.push(tempArr)  
 }
 
-CreateShip();
-console.log(ships)
+!turn && CreateShip();
+
 const game = (event) => {
+    turn++;
     popal = false;
     for (let i = 0; i < ships.length; i++) {
         lenghtArr(ships[i], event);
@@ -37,7 +38,7 @@ const game = (event) => {
     if (!popal){
         event.innerHTML = '*';
     }
-
+    console.log(ships)
 };
 
 const lenghtArr = (arr, event) => {
