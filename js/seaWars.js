@@ -9,21 +9,56 @@ const CreateShip = () => {
 }
 
 const randShips = (countPalub) => {
-    let randPalub = 0, tempArr = [];
-        randPalub = Math.floor(Math.random() * 99); //54
-        let tempEnd = parseInt(randPalub / 10) * 10 + 9,
-        tempStart = randPalub - randPalub % 10 
+    let randCoord = 0, tempArr = [], randGorVer = 0; // 0 - Gor, 1 - Ver
+        randCoord = Math.floor(Math.random() * 99); //52 53 -54+ 55 56 
+        randGorVer = Math.floor(Math.random() * 1);
 
-        if((randPalub + (countPalub - 1)) <= tempEnd){
-            for(let j = 0; j < countPalub; j++){
-                tempArr.push(randPalub + j)
-            }
-        }else if((randPalub - (countPalub - 1)) >= tempStart){
-            for(let j = 0; j < countPalub; j++){
-                tempArr.push(randPalub - j)
+        if(!randGorVer){
+            let tempEnd = parseInt(randCoord / 10) * 10 + 9,
+            tempStart = randCoord - randCoord % 10 
+
+            if((randCoord + (countPalub - 1)) <= tempEnd){
+                while(true){
+                    randCoord = Math.floor(Math.random() * 99);
+                    if(CheckCoord(randCoord, countPalub, '+')) break;
+                }
+                for(let j = 0; j < countPalub; j++){
+                    tempArr.push(randCoord + j)
+                }
+            }else if((randCoord - (countPalub - 1)) >= tempStart){
+                while(true){
+                    randCoord = Math.floor(Math.random() * 99);
+                    if(CheckCoord(randCoord, countPalub, '-')) break;
+                }
+                for(let j = 0; j < countPalub; j++){
+                    tempArr.push(randCoord - j)
+                }
             }
         }
+        if(randGorVer){
+
+        }
         ships.push(tempArr)  
+}
+
+const CheckCoord = (start, count, symbol) => {
+    for(let i = 0; i < ships.length; i++){
+        if(symbol == '+'){
+            for(let c = start; c < start + count; c++){
+                if(ships[i].includes(c)){
+                    return false
+                }
+            }
+        }
+        if(symbol == '-'){
+            for(let c = start; c > start - count; c--){
+                if(ships[i].includes(c)){
+                    return false
+                }
+            }
+        }
+    }
+    return true;
 }
 
 !turn && CreateShip();
