@@ -1,21 +1,20 @@
-const ships = [],
-        listShips = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
+const ships = [], listShips = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
 let popal = false, turn = 0;
 
 const CreateShip = () => {
     for(let i = 0; i < listShips.length; i++){
-        randShips(listShips[i])
+        randShips(listShips[i]) // randShips(4)
     }
 }
 
-const randShips = (countPalub) => {
-    let randCoord = 0, tempArr = [], randGorVer = 0; // 0 - Gor, 1 - Ver
-        randCoord = Math.floor(Math.random() * 99); //52 53 -54+ 55 56 
+const randShips = (countPalub) => { // 4
+    let randCoord = 0, tempArr = [], randGorVer = 0; // 24 + 3 = 27 <= 29
+        randCoord = Math.floor(Math.random() * 99); //
         randGorVer = Math.floor(Math.random() * 1);
 
         if(!randGorVer){
-            let tempEnd = parseInt(randCoord / 10) * 10 + 9,
-            tempStart = randCoord - randCoord % 10 
+            let tempEnd = parseInt(randCoord / 10) * 10 + 9, // 29 
+            tempStart = randCoord - randCoord % 10 //  20
 
             if((randCoord + (countPalub - 1)) <= tempEnd){
                 while(true){
@@ -36,7 +35,7 @@ const randShips = (countPalub) => {
             }
         }
         if(randGorVer){
-            let tempEnd,tempStart; // 24 - 20 = 4
+            let tempEnd, tempStart, tempArr = []; // 24 - 20 = 4
             tempStart = randCoord % 10; // 4
             tempEnd = tempStart + 90; // 4 + 90 = 94
 

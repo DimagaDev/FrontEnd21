@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Events</title>
+        <script src="../js/event2.js"></script>
+
+        <style>
+            td select,
+            td input {
+                width: 150px;
+            }
+            label{
+                display: block;
+            }
+
+            .error input,
+            .error textarea{
+                border: 1px solid red;
+            }
+            .error{
+                color: red;
+            }
+        </style>
+	</head>
+	<body>
+        <form name="my">
+            <p>
+                Color 
+                <select name="color" id="colorBg">
+                    <option value="Yellow">Yellow</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Green">Green</option>
+                </select>
+            </p> <br>
+            <p>
+                Color text
+                <select name="color" id="color_text">
+                    <option value="Orange">Yellow</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Green">Green</option>
+                </select>
+            </p>
+            <p>
+                Size fonts
+                <input type="text" id="size"
+                size="3" value="15"> px </p>
+            <input type="button" 
+                    id="button1" 
+                    value="Set" 
+                    onclick="change_color()"
+            >
+        </form>
+		
+        <form name="calc">
+
+            <input id="x" type="number" value="" placeholder="1234567890">
+            <select name="op" id="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input id="y" type="text" value="" placeholder="1234567890">
+            = 
+            <input type="text" id="res" value=""> 
+            <input type="button" value="Res" onclick='execute()' >
+        </form>
+        <br><br><br>
+
+        <form >
+            <table>
+                <tr>
+                    <td>From: </td>
+                    <td>
+                        <input type="text" name="from">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>re Password: </td>
+                    <td>
+                        <input type="password" name="password2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>To: </td>
+                    <td>
+                        <select name="to" >
+                            <option value="1">Отдел снабжения</option>
+                            <option value="2">Отдел разработки</option>
+                            <option value="3">Директору</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <label >
+                <textarea name="message"></textarea>
+            </label>
+            <input type="button" onclick="validate(this.form)" value="Send">
+        </form>
+	</body> 
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Events</title>
+        <script src="../js/eventPractic.js"></script>
+	</head>
+	<body>
+        <!-- <img src="../Image/1.jpg" alt="1">
+        <img src="../Image/3.jpg" alt="2">
+        <img src="../Image/one.jpg" alt="3">
+
+        <script>
+            let elems = document.getElementsByTagName('img')
+
+            for(let i = 0; i < elems.length; i++){
+                // elems[i].onclick = () => {console.log(`${elems[i].src}`)}
+                elems[i].onclick = f
+            }
+            function f () {
+                console.log(this.getAttribute('src'))
+            }
+        </script> -->
+
+        <!-- <a href="https://www.google.com/">Go to</a>
+        <br><br>
+        <a href="https://www.google.com/">Go to</a>
+        <br><br>
+        <a href="https://www.google.com/">Go to</a>
+
+        <script>
+            let elems = document.getElementsByTagName('a')
+
+            for(let i = 0; i < elems.length; i++){
+                elems[i].addEventListener('mouseover', funcOver)
+                elems[i].addEventListener('mouseout', funcOut)
+            }
+
+            function funcOver () {
+                this.saveHref = this.innerHTML
+                this.innerHTML += ` -> ${this.href}`
+            }
+
+            function funcOut () {
+                this.innerHTML = this.saveHref
+            }
+        </script> -->
+
+        <!-- <p>2</p>
+        <p>4</p>
+        <p>6</p>
+
+        <script>
+            let elems = document.getElementsByTagName('p')
+            for(let i = 0; i < elems.length; i++){
+                elems[i].addEventListener('click', func)
+            }
+
+            function func () {
+                this.innerHTML = this.innerHTML * this.innerHTML
+                this.removeEventListener('click', func)
+            }
+        </script> -->
+
+        <!-- <input type="text" data-len="4">
+        <input type="text" data-len="6">
+        <input type="text" data-len="10">
+
+        <script>
+            let elems = document.getElementsByTagName('input')
+            for(let i = 0; i < elems.length; i++){
+                elems[i].addEventListener('blur', func)
+            }
+            function func () {
+                let temp = this.dataset.len,
+                tempVal = this.value.length
+
+                if(parseInt(temp) === tempVal){
+                    this.style.borderColor = 'green'
+                }else {
+                    this.style.borderColor = 'red'
+                }
+                
+            }
+        </script> -->
+
+        <!-- <div></div>
+        <div>2</div>
+        <div>3</div>
+
+        <script>
+            let elems = document.getElementsByTagName('div')
+            for(let i = 0; i < elems.length; i++){
+                elems[i].addEventListener('click', funcRed)
+            }
+            function funcRed () {
+                // this.style.background = 'red'
+                // this.removeEventListener('click', funcRed)
+                // this.addEventListener('click', funcGrenn)
+                if(this.style.background === 'red'){
+                    this.style.background = 'green'
+                }else {
+                    this.style.background = 'red'
+                }
+            }
+            function funcGrenn () {
+                this.style.background = 'green'
+                this.removeEventListener('click', funcGrenn)
+                this.addEventListener('click', funcRed)
+            }
+        </script> -->
+
+        <ul id="ul">
+            <li class="dd">set 1</li>
+            <li class="dd">set 2</li>
+            <li class="dd">set 3</li>
+        </ul>
+        <button id="btn">Add task</button>
+
+        <script>
+            let ul = document.getElementById('ul')
+            ul.addEventListener('click', addItem)
+            
+            function addItem () {
+                event.target.innerHTML += ' !'
+            }
+
+            let btn = document.getElementById('btn')
+            btn.addEventListener('click', addLi)
+
+            function addLi () {
+                let tempLi = document.createElement('li')
+                tempLi.innerHTML = 'set '
+                tempLi.classList.add('dd')
+                ul.appendChild(tempLi)
+            }
+        </script>
+	</body> 
+</html>
